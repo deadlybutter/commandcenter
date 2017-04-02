@@ -1,0 +1,11 @@
+@import '../toolbox.scss';
+
+.fluid-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: $spacing;
+}

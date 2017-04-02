@@ -1,0 +1,9 @@
+@import '../toolbox.scss';
+
+.component {
+  display: flex;
+
+  .component__interior {
+    padding: $halfSpacing;
+  }
+}

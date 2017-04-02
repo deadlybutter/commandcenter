@@ -1,0 +1,27 @@
+@import '../toolbox.scss';
+
+$headerLineLength: $spacing * 2;
+
+.header__line {
+  content: '';
+  position: absolute;
+  top: 50%;
+  background-color: $primaryColor;
+  width: $headerLineLength;
+  height: 2px;
+  margin: 0 $halfSpacing;
+}
+
+header h1 {
+  color: $primaryColor;
+  position: relative;
+
+  &:before {
+    left: -$headerLineLength - $spacing;
+    @extend .header__line;
+  }
+
+  &:after {
+    @extend .header__line;
+  }
+}
